@@ -26,7 +26,7 @@ const UpdateUser = () => {
             const updateUser = {name,age,yob,fathername,mothername};
             console.log(updateUser);
     
-            fetch(`http://localhost:5000/users/${_id}`,{
+            fetch(`https://user-managment-server-dusky.vercel.app/users/${_id}`,{
                 method : "PUT",
                 headers : {
                     "content-type" : "application/json",
@@ -57,7 +57,7 @@ const UpdateUser = () => {
             <div className="px-4 sm:px-8 md:px-12 py-6">
            
             <div className="max-w-xl mx-auto bg-white shadow-xl rounded-2xl p-6 mt-6">
-                <h2 className="text-2xl font-semibold mb-4 text-center text-gray-800">Add New User</h2>
+                <h2 className="text-2xl font-semibold mb-4 text-center text-gray-800">Update  User</h2>
                 <form onSubmit={handleupdateuser}
                     className="space-y-4">
                     <div>

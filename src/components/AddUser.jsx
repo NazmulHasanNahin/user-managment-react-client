@@ -17,7 +17,7 @@ const AddUser = () => {
         const newUser = {name,age,yob,fathername,mothername};
         console.log(newUser);
 
-        fetch("http://localhost:5000/users",{
+        fetch("https://user-managment-server-dusky.vercel.app/users",{
             method : "POST",
             headers : {
                 "content-type" : "application/json",
