@@ -23,9 +23,7 @@ function App() {
           .then((res) => res.json())
           .then((data) => {
             if (data.deletedCount > 0) {
-              Swal.fire("Deleted!", "User has been deleted.", "success").then(() =>
-                window.location.reload()
-              );
+              Swal.fire("Deleted!", "User has been deleted.", "success");
             } else {
               Swal.fire("Error!", "Failed to delete user.", "error");
             }
